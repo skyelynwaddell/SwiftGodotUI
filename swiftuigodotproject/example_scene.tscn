@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4383yg87e3ti"]
+
+[ext_resource type="Script" path="res://example_scene.gd" id="1_qpw48"]
+
+[node name="ExampleScene" type="Node2D"]
+script = ExtResource("1_qpw48")
+
+[node name="Button" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 46.0
+offset_top = 44.0
+offset_right = 312.0
+offset_bottom = 142.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
